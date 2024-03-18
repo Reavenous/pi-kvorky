@@ -10,4 +10,10 @@ public class TicTacToe {
             }
         }
     }
+    public TicTacToe(int size) {
+        this.size = size;
+        board = new char[size][size];
+        initializeBoard();
+        currentPlayer = 'X';
+    }
 }
